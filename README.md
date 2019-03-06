@@ -30,3 +30,4 @@ location / {
 ## Installation
 
 In order to install a nginx module, you'll have to compile nginx from source. Download the source from https://nginx.org/en/download.html. You'll also need to clone this repo. Inside the nginx source directory run `./configure --add-module=/path/to/my-module`. If you have nginx currently installed, you can get the existing configure options with `nginx -V`. It's annoying that you have to recompile nginx to add a module, but I don't have any other way.
+To build for nginx-plus, use `./configure --with-compat --add-dynamic-module=/path/to/my-module`.
